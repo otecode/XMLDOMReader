@@ -24,7 +24,7 @@ public class DomXmlReader {
 
         try (Scanner input = new Scanner(System.in)) {
 
-            route = EnterAndValidateRoute(input);
+            route = enterAndValidateRoute(input);
 
         }
 
@@ -51,7 +51,7 @@ public class DomXmlReader {
      * @param input the scanner class instance used to ask the user for the file's route
      * @return      the boolean indicating the validity of the entered route
      */
-    private static String EnterAndValidateRoute(Scanner input) {
+    private static String enterAndValidateRoute(Scanner input) {
 
         String route = null;
         boolean isValid = false;
